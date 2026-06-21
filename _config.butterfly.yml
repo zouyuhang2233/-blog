@@ -1,0 +1,61 @@
+# --------------------------------------
+# 导航菜单
+# --------------------------------------
+menu:
+  Home: / || fas fa-home
+  我的照片: /photos || fas fa-camera-retro
+
+# --------------------------------------
+# 社交链接
+# --------------------------------------
+social:
+  fab fa-github: https://github.com/zouyuhang2233 || Github || '#24292e'
+
+# --------------------------------------
+# 侧边栏
+# --------------------------------------
+aside:
+  card_author:
+    button:
+      link: https://github.com/zouyuhang2233
+  card_announcement:
+    enable: false
+
+# --------------------------------------
+# favicon
+# --------------------------------------
+favicon: /img/favicon.ico
+
+# --------------------------------------
+# 访客统计 - 关闭
+# --------------------------------------
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
+
+# --------------------------------------
+# 注入自定义 CSS/JS
+# --------------------------------------
+inject:
+  head:
+    - <link rel="preconnect" href="https://fonts.googleapis.com">
+    - <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    - <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    - <link rel="stylesheet" href="/css/editorial.css">
+  bottom:
+    - |-
+      <script>
+      (function(){
+        var key = "myblog_visits";
+        var count = parseInt(localStorage.getItem(key) || "0") + 1;
+        localStorage.setItem(key, count);
+        var el = document.querySelector(".card-webinfo .webinfo");
+        if (el) {
+          var div = document.createElement("div");
+          div.className = "webinfo-item";
+          div.innerHTML = '<div class="item-name">访问次数 :</div><div class="item-count">' + count + '</div>';
+          el.appendChild(div);
+        }
+      })();
+      </script>

@@ -1,0 +1,101 @@
+/* === Global typography === */
+body {
+  font-family: 'Noto Sans SC', 'Source Han Sans SC', 'Microsoft YaHei', sans-serif;
+}
+#body-wrap {
+  background: #FAFAFA;
+}
+/* Site title and post titles use serif */
+.site-name, .post-title, #site-title, #subtitle, .article-sort-item-title {
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', 'STSong', 'SimSun', serif !important;
+}
+/* Sidebar card title font */
+.item-headline {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 600;
+}
+
+/* Header & Footer - black */
+#page-header {
+  background-color: #18181B !important;
+}
+#footer {
+  background-color: #18181B !important;
+}
+
+/* === Editorial Magazine Style === */
+:root {
+  --editorial-bg: #FAFAFA;
+  --editorial-text: #18181B;
+  --editorial-muted: #71717A;
+  --editorial-border: #E4E4E7;
+}
+
+/* Article reading width */
+.post-content {
+  max-width: 680px;
+  margin: 0 auto;
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', 'STSong', 'SimSun', serif !important;
+  font-size: 1.05em;
+  line-height: 1.85;
+  color: #18181B;
+}
+
+/* Headings */
+.post-content h1 { font-size: 2em; font-weight: 700; letter-spacing: -0.02em; margin-top: 2em; font-family: 'Noto Serif SC', serif !important; }
+.post-content h2 { font-size: 1.5em; font-weight: 600; letter-spacing: -0.01em; margin-top: 2em; border-bottom: 1px solid #E4E4E7; padding-bottom: 0.3em; font-family: 'Noto Serif SC', serif !important; }
+.post-content h3 { font-size: 1.2em; font-weight: 600; margin-top: 1.5em; font-family: 'Noto Serif SC', serif !important; }
+
+/* Blockquote - pull quote style */
+.post-content blockquote {
+  border-left: 3px solid #18181B !important;
+  background: transparent !important;
+  color: #3F3F46 !important;
+  font-size: 1.1em;
+  font-style: italic;
+  padding: 0.8em 1.5em !important;
+  margin: 2em 0;
+}
+
+/* Horizontal rule */
+.post-content hr {
+  border: 0;
+  height: 1px;
+  background: #E4E4E7;
+  margin: 3em 0;
+}
+
+/* Links */
+.post-content a {
+  color: #18181B !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #D4D4D8;
+}
+.post-content a:hover { text-decoration-color: #18181B; }
+
+/* Code inline */
+.post-content code {
+  background: rgba(24,24,27,0.04);
+  color: #18181B;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Post card on homepage */
+.recent-post-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+.recent-post-item {
+  transition: all 0.3s ease;
+  border: 1px solid #E4E4E7;
+}
+
+/* Post title */
+.post-title { font-family: 'Noto Serif SC', serif !important; }
+
+/* Sidebar - muted */
+.card-widget { border: 1px solid #E4E4E7; }
