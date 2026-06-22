@@ -51,6 +51,7 @@ inject:
     - <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     - <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     - <link rel="stylesheet" href="/-blog/css/editorial.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
   bottom:
     - |-
       <script>
@@ -66,4 +67,31 @@ inject:
           el.appendChild(div);
         }
       })();
+      </script>
+    - <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    - |-
+      <div id="aplayer"></div>
+      <script>
+      var ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: true,
+        autoplay: false,
+        preload: 'auto',
+        volume: 0.7,
+        lrcType: 0,
+        listFolded: true,
+        listMaxHeight: 90,
+        audio: [
+          { name: "Улетали птицами гордыми (Remix)", artist: "7ouTp", url: "/-blog/music/7ouTp - Улетали птицами гордыми (Remix).mp3" },
+          { name: "Pretty Girl", artist: "Clairo", url: "/-blog/music/Clairo - Pretty Girl.mp3" },
+          { name: "你说抱歉时 我无法呼吸", artist: "Zy", url: "/-blog/music/Zy - 你说抱歉时 我无法呼吸.mp3" },
+          { name: "风驶过的声音是", artist: "Zy", url: "/-blog/music/Zy - 风驶过的声音是.mp3" },
+          { name: "好喜欢你", artist: "刘俊骐", url: "/-blog/music/刘俊骐 - 好喜欢你.mp3" },
+          { name: "夏の喚く (夏鸣)", artist: "小小君", url: "/-blog/music/小小君 - 夏の喚く (夏鸣).mp3" },
+          { name: "怎么办我想你", artist: "本兮", url: "/-blog/music/本兮 - 怎么办我想你.mp3" },
+          { name: "怎么办我爱你", artist: "本兮", url: "/-blog/music/本兮 - 怎么办我爱你.mp3" },
+          { name: "我知道你 (1.2x版)", artist: "熊雨珂", url: "/-blog/music/熊雨珂 - 我知道你 (1.2x版).mp3" },
+          { name: "One Last Kiss", artist: "瞳りょこ", url: "/-blog/music/瞳りょこ - One Last Kiss.mp3" },
+        ]
+      });
       </script>
