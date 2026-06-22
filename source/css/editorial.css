@@ -6,9 +6,9 @@
   --color-border:   #E4E4E7;
   --color-accent:   #EC4899;
   --color-surface:  #FFFFFF;
-  --font-serif:     ''Noto Serif SC'', ''Source Han Serif SC'', ''STSong'', ''SimSun'', serif;
-  --font-sans:      ''Noto Sans SC'', ''Source Han Sans SC'', ''Microsoft YaHei'', sans-serif;
-  --font-mono:      ''JetBrains Mono'', ''Fira Code'', ''Cascadia Code'', monospace;
+  --font-serif:     'Noto Serif SC', 'Source Han Serif SC', 'STSong', 'SimSun', serif;
+  --font-sans:      'Noto Sans SC', 'Source Han Sans SC', 'Microsoft YaHei', sans-serif;
+  --font-mono:      'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
 }
 
 body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
