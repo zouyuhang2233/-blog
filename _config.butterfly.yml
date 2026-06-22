@@ -3,6 +3,8 @@
 # --------------------------------------
 menu:
   Home: / || fas fa-home
+  归档: /archives || fas fa-archive
+  关于我: /about || fas fa-user
   我的照片: /photos || fas fa-camera-retro
 
 # --------------------------------------
@@ -10,6 +12,12 @@ menu:
 # --------------------------------------
 social:
   fab fa-github: https://github.com/zouyuhang2233 || Github || '#24292e'
+
+# --------------------------------------
+# 头像
+# --------------------------------------
+avatar:
+  img: /photos/images/b2a6e6dc75e55c805a166dfa6e47a652.jpg
 
 # --------------------------------------
 # 侧边栏

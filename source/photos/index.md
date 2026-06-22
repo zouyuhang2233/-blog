@@ -26,5 +26,5 @@ type: photos
 </style>
 
 <div class="photo-grid">
-  <img src="/photos/images/b2a6e6dc75e55c805a166dfa6e47a652.jpg" alt="照片">
+  <img src="/-blog/photos/images/b2a6e6dc75e55c805a166dfa6e47a652.jpg" alt="照片">
 </div>
