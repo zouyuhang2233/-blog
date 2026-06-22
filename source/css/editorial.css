@@ -59,6 +59,14 @@ figure.highlight, pre[class*="language-"] { border-radius: 6px; border: 1px soli
 html { scroll-behavior: smooth; }
 .post-content img { border-radius: 4px; }
 
+
+/* Override Butterfly blue hover */
+.recent-post-item .article-title:hover,
+.article-sort-item-title:hover,
+a.article-title:hover {
+  color: var(--color-accent) !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
   html { scroll-behavior: auto; }
