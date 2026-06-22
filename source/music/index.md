@@ -17,7 +17,12 @@ type: music
 
 <div id="aplayer"></div>
 <script>
-var ap = new APlayer({
+(function waitAPlayer() {
+  if (typeof APlayer === 'undefined') {
+    setTimeout(waitAPlayer, 100);
+    return;
+  }
+  var ap = new APlayer({
   container: document.getElementById('aplayer'),
   fixed: false,
   autoplay: false,
@@ -37,4 +42,6 @@ var ap = new APlayer({
         { name: "One Last Kiss", artist: "瞳りょこ", url: "/-blog/audio/%E7%9E%B3%E3%82%8A%E3%82%87%E3%81%93%20-%20One%20Last%20Kiss.mp3" },
   ]
 });
+  });
+})();
 </script>
