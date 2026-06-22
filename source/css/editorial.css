@@ -13,7 +13,7 @@
 
 body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
 #body-wrap { background: var(--color-bg); }
-::selection { background: var(--color-text); color: #FAFAFA; }
+::selection { background: var(--color-text) !important; color: #FAFAFA !important; }
 #page-header, #footer { background-color: var(--color-text) !important; }
 
 .site-name, .post-title, #site-title, #subtitle, .article-sort-item-title { font-family: var(--font-serif) !important; }
